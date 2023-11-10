@@ -11,12 +11,23 @@
   <h1>Going to Boston</h1>
   <p>How many rounds will be played?</p>
   <input type="text" class="rounds" size="3"/>
-  <button type="button" class="submit">Submit</button> <br><br>
+  <button type="button" class="submit">Submit</button> <br>
+  <span class="error"></span><br><br>
 
   <button type="button" class="first">Who goes first? Click me to roll and find out!</button>
-  <span class="first_info">Player will go first.</span>
+  <span class="first_info"></span>
+  <h2>Game Stats</h2>
+  <span class="round">Round:</span><br>
+  <span class="turn">Turn:</span><br>
+  <span class="player1_rounds_won">Player 1 rounds won:</span><br>
+  <span class="player2_rounds_won">Player 2 rounds won:</span>
 
-  <a href="index.html">Link to Index</a>
+  <h3>Current Round Stats</h3>
+  <span class="player1_score">Player 1 score:</span><br>
+  <span class="player2_score">Player 2 score:</span><br><br>
+
+  <button type="button" class="roll"> Roll </button><br><br>
+  <button type="button" class="reset"> New Game </button>
 
   <script src="../js/main.js"></script>
 </body>
