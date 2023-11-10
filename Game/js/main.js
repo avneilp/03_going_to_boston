@@ -1,5 +1,5 @@
 let roll = function () {
-    return Math.ceiling(Math.random() * 6);
+    return Math.ceil(Math.random() * 6);
 }
 
 let rounds = 0;
@@ -21,7 +21,7 @@ document.querySelector(".first").addEventListener("click", function () {
         player = 2;
     }
     else {
-        player = Math.ceiling(Math.random() * 2)
+        player = Math.ceil(Math.random() * 2)
     }
     document.querySelector(".first_info").textContent = `Player ${player} will go first`;
 })
