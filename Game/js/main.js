@@ -56,6 +56,8 @@ document.querySelector(".first").addEventListener("click", function () {
     document.querySelector(".first_info").textContent = `Player ${turn} will go first`;
     document.querySelector(".first").disabled = true;
     document.querySelector(".roll").disabled = false;
+    let hide = document.querySelector(".instruction").classList;
+    hide.remove("hidden");
 })
 
 document.querySelector(".calc").addEventListener("click", function () {
@@ -177,4 +179,7 @@ document.querySelector(".reset").addEventListener("click", function () {
     document.querySelector(".turn").textContent = `Turn: `;
     document.querySelector(".winner").textContent = ``;
     document.querySelector(".first_info").textContent = ``;
+    let hide = document.querySelector(".instruction").classList;
+    hide.add("hidden");
+    document.querySelector(".rounds").value = null;
 })
